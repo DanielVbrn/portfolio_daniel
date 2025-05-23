@@ -1,12 +1,12 @@
 import Image from "next/image";
-import HomePage from "./home/page";
+import { Providers } from "@/app/providers";
 
 export default function Home() {
   return (
-    <div className="container bg-amber-50 ">
-      <h1 className="font-">Meu Portifólio</h1>
-      <HomePage/>
-      <h1>Olá pessoas</h1>
-    </div>
+    <Providers>
+      <main className="text-7xl font-sans ">
+        <h1>Daniel Vitor</h1>
+      </main>
+    </Providers>
   );
 }
