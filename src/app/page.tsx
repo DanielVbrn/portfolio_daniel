@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Providers } from "@/app/providers";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <Providers>
-      <main className="text-7xl font-sans ">
-        <h1>Daniel Vitor</h1>
-      </main>
+     <Header/>
+     
     </Providers>
   );
 }
