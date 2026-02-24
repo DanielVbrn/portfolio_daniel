@@ -1,12 +1,10 @@
-import Image from "next/image";
 import { Providers } from "@/app/providers";
-import Header from "@/components/Header";
+import Home from "./Home";
 
-export default function Home() {
+export default function App() {
   return (
     <Providers>
-     <Header/>
-     
+     <Home />
     </Providers>
   );
 }
