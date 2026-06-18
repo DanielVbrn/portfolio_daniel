@@ -1,27 +1,27 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-slate-900 text-slate-100 px-6">
-      <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row gap-12 items-center">
         
-        <div className="flex justify-center">
+        <div className="flex-1 flex justify-center">
           <div className="relative group">
             <Image
               src="/img/image_portifolio.jpeg" 
               alt="Daniel Vitor"
               width={300}
               height={300}
-              className="rounded-4xl object-cover shadow-2xl transition-transform duration-500 group-hover:scale-102"
+              className="rounded-4xl object-cover shadow-2xl transition-transform duration-500 group-hover:scale-105"
             />
 
             <div className="absolute inset-0 rounded-2xl bg-blue-500/20 blur-2xl -z-10 group-hover:bg-blue-500/30 transition"></div>
           </div>
         </div>
 
-        <div className="text-center md:text-left">
+        {/* Coluna do texto */}
+        <div className="flex-1 text-center md:text-left">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Daniel Vitor
           </h1>
@@ -40,6 +40,7 @@ export default function Hero() {
             </a>
 
             <a
+              target="_blank"
               href="/cv.pdf"
               className="border border-blue-500 px-6 py-3 rounded-xl hover:bg-blue-500/10 transition-all duration-300"
             >
@@ -52,6 +53,7 @@ export default function Hero() {
               href="https://github.com/DanielVbrn"
               target="_blank"
               className="hover:text-white transition-transform hover:scale-110"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
@@ -60,11 +62,13 @@ export default function Hero() {
               href="https://www.linkedin.com/in/daniel-vitor-7a8b92247/"
               target="_blank"
               className="hover:text-blue-400 transition-transform hover:scale-110"
+              rel="noreferrer"
             >
               <FaLinkedin />
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );
