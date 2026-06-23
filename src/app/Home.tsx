@@ -1,3 +1,5 @@
+import About from '@/components/About'
+import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects'
@@ -8,28 +10,39 @@ const Home = () => {
   return (
     <main className='relative bg-slate-950 text-slate-100 overflow-hidden'>
 
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 
-                w-[400px] h-[400px] 
+      <div className="absolute top-0 left-1/2 -translate-x-1/2
+                w-[400px] h-[400px]
                 md:w-[800px] md:h-[800px]
-                bg-blue-500/10 blur-[120px] 
+                bg-blue-500/10 blur-[120px]
                 rounded-full -z-10" />
 
       <Navbar />
 
-      <section className='relative'>
-        <Hero />  
+      <section id="hero">
+        <Hero />
       </section>
 
-      <div className='relative py-16'>
-        <hr className="w-full max-w-6xl mx-auto h-[3px] bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 rounded-full mb-10 border-0" />
+      <div className='py-4'>
+        <hr className="w-full max-w-6xl mx-auto h-[2px] bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 rounded-full border-0 opacity-40" />
       </div>
 
-      <section className='py-24'>
-        <div className='max-w-6-l mx-auto px-6'>
-          <TechStack />
-        </div>
+      <section id="skills" className='py-24'>
+        <TechStack />
       </section>
+
       <Projects />
+
+      <div className='px-6'>
+        <hr className="w-full max-w-6xl mx-auto h-[1px] bg-slate-700/50 rounded-full border-0" />
+      </div>
+
+      <About />
+
+      <div className='px-6'>
+        <hr className="w-full max-w-6xl mx-auto h-[1px] bg-slate-700/50 rounded-full border-0" />
+      </div>
+
+      <Contact />
 
     </main>
   )
