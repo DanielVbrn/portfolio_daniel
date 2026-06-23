@@ -1,12 +1,10 @@
-import Image from "next/image";
 import { Providers } from "@/app/providers";
+import Home from "./Home";
 
-export default function Home() {
+export default function App() {
   return (
     <Providers>
-      <main className="text-7xl font-sans ">
-        <h1>Daniel Vitor</h1>
-      </main>
+     <Home />
     </Providers>
   );
 }
