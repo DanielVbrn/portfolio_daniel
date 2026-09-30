@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+
+
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/portfolio_daniel"
+    : "";
+
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-transparent text-slate-100 px-6 pt-20">
@@ -9,7 +17,7 @@ export default function Hero() {
         {/* Imagem com float + glow pulsante */}
         <div className="flex-1 flex justify-center">
             <Image
-              src="/img/image_portifolio.jpeg"
+              src={`${basePath}/img/image_portifolio.jpeg`}
               alt="Daniel Vitor"
               width={275}
               height={250}
