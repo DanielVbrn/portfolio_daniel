@@ -8,16 +8,13 @@ export default function Hero() {
 
         {/* Imagem com float + glow pulsante */}
         <div className="flex-1 flex justify-center">
-          <div className="">
-            <div />
             <Image
               src="/img/image_portifolio.jpeg"
               alt="Daniel Vitor"
-              width={300}
-              height={300}
-              className="relative rounded-3xl object-cover shadow-2xl transition-transform duration-500 group-hover:scale-105"
+              width={275}
+              height={250}
+              className="relative rounded-3xl border-2 border-solid bg-gradient-to-b bg-emerald-400 via-cyan-400 to-emerald-950  object-cover shadow-3xl transition-transform duration-500 group-hover:scale-105"
             />
-          </div>
         </div>
 
         {/* Texto com stagger fade-in-up */}
