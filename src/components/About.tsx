@@ -1,5 +1,11 @@
+
+
+const experienceYears = new Date()
+const totalYears = experienceYears.getUTCFullYear() - 2022
+
+
 const stats = [
-  { value: "3+", label: "Anos estudando desenvolvimento" },
+  { value: `${totalYears}+`, label: "Anos estudando desenvolvimento" },
   { value: "10+", label: "Tecnologias dominadas" },
   { value: "5+", label: "Projetos construídos" },
 ];
@@ -8,6 +14,7 @@ const highlights = [
   "Experiência com arquitetura de microsserviços e APIs REST",
   "Foco em código limpo, testável e bem documentado",
   "Familiaridade com ambientes cloud (AWS) e containerização",
+  "Experiência com fila de mensageria utilizando Redis.",
   "Sempre aprendendo — atualmente explorando NestJS e sistemas distribuídos",
 ];
 

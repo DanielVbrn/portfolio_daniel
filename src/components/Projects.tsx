@@ -5,7 +5,7 @@ type Project = {
   description: string;
   emoji: string;
   techs: string[];
-  github: string;
+  source: string;
   live: string | null;
 };
 
@@ -13,10 +13,10 @@ const projects: Project[] = [
   {
     title: "Loja de Jogos",
     description:
-      "E-commerce completo de games com catálogo, carrinho de compras e sistema de autenticação de usuários.",
+      "E-commerce completo de games com catálogo, carrinho de compras.",
     emoji: "🎮",
-    techs: ["React", "Django", "PostgreSQL", "Docker"],
-    github: "https://github.com/DanielVbrn",
+    techs: ["NodeJS", "ReactJS", "Typescript", "PostgreSQL", "Docker", "Redis", "TypeORM"],
+    source: "https://jogosnet-ndnf.vercel.app/",
     live: null,
   },
   {
@@ -25,7 +25,7 @@ const projects: Project[] = [
       "API de autenticação com JWT, refresh tokens, controle de acesso por roles e integração com PostgreSQL.",
     emoji: "🔐",
     techs: ["NestJS", "TypeScript", "PostgreSQL", "Docker"],
-    github: "https://github.com/DanielVbrn",
+    source: "https://github.com/DanielVbrn",
     live: null,
   },
   {
@@ -34,7 +34,7 @@ const projects: Project[] = [
       "Gerenciador de tarefas fullstack com boards kanban, colaboração em tempo real e autenticação.",
     emoji: "📋",
     techs: ["Next.js", "Node.js", "TypeScript", "PostgreSQL"],
-    github: "https://github.com/DanielVbrn",
+    source: "https://github.com/DanielVbrn",
     live: null,
   },
 ];
@@ -79,7 +79,7 @@ const Projects = () => {
 
               <div className="flex gap-3 mt-auto">
                 <a
-                  href={project.github}
+                  href={project.source}
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`GitHub — ${project.title}`}

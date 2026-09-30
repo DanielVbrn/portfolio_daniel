@@ -15,7 +15,7 @@ const contacts = [
     label: "LinkedIn",
     value: "/in/daniel-vitor-7a8b92247",
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/daniel-vitor-7a8b92247/",
+    href: "https://www.linkedin.com/in/danielvitor-developer/",
     color: "text-blue-400",
     border: "hover:border-blue-400/40",
     glow: "hover:shadow-blue-400/10",

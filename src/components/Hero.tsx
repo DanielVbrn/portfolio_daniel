@@ -71,7 +71,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/daniel-vitor-7a8b92247/"
+              href="https://www.linkedin.com/in/danielvitor-developer/"
               target="_blank"
               className="hover:text-blue-400 transition-all duration-300 hover:scale-125"
               rel="noreferrer"

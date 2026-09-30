@@ -1,3 +1,4 @@
+import { DiRedis } from "react-icons/di";
 import {
   FaReact,
   FaNodeJs,
@@ -42,6 +43,7 @@ const categories: Category[] = [
       { name: "NestJS", icon: SiNestjs },
       { name: "Python", icon: FaPython },
       { name: "Django Rest", icon: SiDjango },
+      { name: "Redis", icon: DiRedis }
     ],
   },
   {
